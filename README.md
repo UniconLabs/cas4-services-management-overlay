@@ -32,6 +32,6 @@ Note that the `log4j2.xml` config file is shared with cas web context and that f
 
 # Use
 Access the server on `https://localhost:8443/cas-services` (replace `localhost` and port with whatever your local deployment configuration is)
-and start adding services definition. Also note that the CAS server services registry MUST be JSON and pointing to the same external config
+and start adding services definitions. Also note that the CAS server services registry MUST be JSON and pointing to the same external config
 location for services files as this application. That setting would be in `/etc/cas/cas.properties` and should look like this: `service.registry.config.location=file:/etc/cas/services`
 This same property is set in `/etc/cas/cas-management.properties` for this application.
