@@ -1,4 +1,4 @@
-CAS Services Management Web Application Maven overlay
+CAS Services Management Overlay
 ============================
 
 Services management web application Maven overlay for CAS with externalized configuration.
