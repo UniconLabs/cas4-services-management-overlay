@@ -1,7 +1,7 @@
 CAS Services Management Web Application Maven overlay
 ============================
 
-Services mangement web application Maven overlay for CAS with externalized configuration.
+Services management web application Maven overlay for CAS with externalized configuration.
 
 
 # Versions
@@ -47,10 +47,10 @@ mvnw.bat clean package
 mvnw jetty:run-forked
 ```
 
-CAS will be available at:
+Webapp will be available at:
 
-* `http://cas.server.name:8080/cas-services`
-* `https://cas.server.name:8443/cas-services`
+* `http://localhost:8080/cas-services`
+* `https://localhost:8443/cas-services`
 
 ## External
 Deploy resultant `target/cas-services.war` to a Servlet container of choice.
