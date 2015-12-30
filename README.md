@@ -1,18 +1,16 @@
-CAS4 Services Management Web Application Maven overlay
+CAS Services Management Web Application Maven overlay
 ============================
 
-Services mangement web application Maven overlay for CAS versions `4.1.0+` with externalized configuration.
+Services mangement web application Maven overlay for CAS with externalized configuration.
 
 
 # Versions
 ```xml
-<cas.version>4.1.0-RC2</cas.version>
+<cas.version>4.1.3</cas.version>
 ```
 
 # Recommended Requirements
 * JDK 1.7+
-* Apache Maven 3+
-* Servlet container supporting Servlet 3+ spec (e.g. Apache Tomcat 7+)
 
 # Externalized Configuration
 The `etc` directory contains the sample configuration files that would need to be copied to an external file system location (`/etc/cas` by default)
