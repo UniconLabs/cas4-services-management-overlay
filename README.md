@@ -41,7 +41,7 @@ mvnw.bat clean package
 ## Embedded Jetty
 
 * Create a Java keystore at `/etc/cas/jetty/thekeystore` with the password `changeit`.
-* Import your CAS server certificate inside this keystore.
+* Import your server certificate inside this keystore.
 
 ```bash
 mvnw jetty:run-forked
