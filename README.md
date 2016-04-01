@@ -6,7 +6,7 @@ Services management web application Maven overlay for CAS with externalized conf
 
 # Versions
 ```xml
-<cas.version>4.2.0</cas.version>
+<cas.version>4.2.1</cas.version>
 ```
 
 # Recommended Requirements
