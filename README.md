@@ -16,9 +16,22 @@ Services management web application Maven overlay for CAS with externalized conf
 
 The `etc` directory contains the configuration files and directories that need to be copied to `/etc/cas`.
 
-# Externalized Configuration
+# Build
 
-The `etc` directory contains the sample configuration files that would need to
-be copied to an external file system location (`/etc/cas` by default)
-and configured to satisfy local CAS installation needs. 
+```bash
+mvnw[.bat] clean package && java -Xdebug -Xrunjdwp:transport=dt_socket,address=5000,server=y,suspend=n -jar target/cas-management.war 
 
+```
+
+
+# Deployment
+
+## Embedded Tomcat
+
+CAS will be available at:
+
+* `http://cas.server.name:8080/cas-management`
+* `https://cas.server.name:8443/cas-management`
+
+## External
+Deploy resultant `target/cas-management.war`  to a servlet container of choice.

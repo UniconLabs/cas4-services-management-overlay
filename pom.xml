@@ -24,7 +24,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
-                    <warName>cas-services</warName>
+                    <warName>cas-management</warName>
 			        <failOnMissingWebXml>false</failOnMissingWebXml>
 			        <recompressZippedFiles>false</recompressZippedFiles>
 			        <archive>
@@ -45,7 +45,7 @@
                 <version>3.3</version>
             </plugin>
         </plugins>
-        <finalName>cas-services</finalName>
+        <finalName>cas-management</finalName>
     </build>
 
     <dependencies>
@@ -59,7 +59,7 @@
     </dependencies>
 
     <properties>
-        <cas.version>5.0.0.M3-SNAPSHOT</cas.version>
+        <cas.version>5.0.0.M3</cas.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -89,6 +89,10 @@
         <repository>
             <id>shibboleth-releases</id>
             <url>https://build.shibboleth.net/nexus/content/repositories/releases</url>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
 

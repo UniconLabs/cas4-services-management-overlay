@@ -1,7 +1,0 @@
-2016-07-17 00:55:33,846 INFO [org.apereo.cas.mgmt.web.CasManagementWebApplication] - The following profiles are active: default
-2016-07-17 00:55:34,091 INFO [org.apereo.cas.mgmt.web.CasManagementWebApplication] - Started CasManagementWebApplication in 0.543 seconds (JVM running for 23.281)
-2016-07-17 00:55:34,587 INFO [org.apereo.cas.mgmt.web.CasManagementWebApplication] - Started CasManagementWebApplication in 22.831 seconds (JVM running for 23.777)
-2016-07-17 00:55:54,338 INFO [org.apereo.cas.services.DefaultServicesManagerImpl] - Loaded 3 services from InMemoryServiceRegistryDaoImpl.
-2016-07-17 00:56:54,339 INFO [org.apereo.cas.services.DefaultServicesManagerImpl] - Loaded 3 services from InMemoryServiceRegistryDaoImpl.
-2016-07-17 00:57:54,341 INFO [org.apereo.cas.services.DefaultServicesManagerImpl] - Loaded 3 services from InMemoryServiceRegistryDaoImpl.
-2016-07-17 00:58:54,340 INFO [org.apereo.cas.services.DefaultServicesManagerImpl] - Loaded 3 services from InMemoryServiceRegistryDaoImpl.
