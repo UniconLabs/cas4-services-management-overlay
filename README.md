@@ -14,7 +14,7 @@ Services management web application Maven overlay for CAS with externalized conf
 
 # Configuration
 
-The `etc` directory contains the configuration files and directories that need to be copied to `/etc/cas`.
+The `etc` directory contains the configuration files and directories that need to be copied to `/etc/cas/config`.
 
 # Build
 
