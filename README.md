@@ -5,6 +5,7 @@ Services management web application Maven overlay for CAS with externalized conf
 
 
 # Versions
+
 ```xml
 <cas.version>5.0.0</cas.version>
 ```
@@ -15,10 +16,27 @@ Services management web application Maven overlay for CAS with externalized conf
 
 # Build
 
-```bash
-build.sh run
+To see what commands are available to the build script, run:
 
+```bash
+./build.sh help
 ```
+
+To package the final web application, run:
+
+```bash
+./build.sh package
+```
+
+To update `SNAPSHOT` versions run:
+
+```bash
+./build.sh package -U
+```
+
+## Note
+
+If you are running the management web application on the same machine as the CAS server web application itself, you will need to eveluate the build script and make sure the configuration files don't override each other.
 
 
 # Deployment
