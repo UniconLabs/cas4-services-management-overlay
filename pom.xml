@@ -24,13 +24,13 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
-                    <warName>cas-management</warName>
-			        <failOnMissingWebXml>false</failOnMissingWebXml>
-			        <recompressZippedFiles>false</recompressZippedFiles>
-			        <archive>
-			        	<compress>false</compress>
-						<manifestFile>${project.build.directory}/war/work/org.apereo.cas/cas-management-webapp/META-INF/MANIFEST.MF</manifestFile> 
-					</archive>
+                    	<warName>cas-management</warName>
+			<failOnMissingWebXml>false</failOnMissingWebXml>
+			<recompressZippedFiles>false</recompressZippedFiles>
+			<archive>
+				<compress>false</compress>
+				<manifestFile>${project.build.directory}/war/work/org.apereo.cas/cas-management-webapp/META-INF/MANIFEST.MF</manifestFile> 
+			</archive>
                     <overlays>
                         <overlay>
                             <groupId>org.apereo.cas</groupId>
@@ -59,7 +59,7 @@
     </dependencies>
 
     <properties>
-        <cas.version>5.0.0.RC3-SNAPSHOT</cas.version>
+        <cas.version>5.0.0.RC4-SNAPSHOT</cas.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
