@@ -12,25 +12,25 @@
         <plugins>
             <plugin>
                 <groupId>com.rimerosolutions.maven.plugins</groupId>
-          		<artifactId>wrapper-maven-plugin</artifactId>
-          		<version>0.0.4</version>
-          		<configuration>
-          			<verifyDownload>true</verifyDownload>
-	    			<checksumAlgorithm>MD5</checksumAlgorithm>
-			</configuration>
+                  <artifactId>wrapper-maven-plugin</artifactId>
+                  <version>0.0.4</version>
+                  <configuration>
+                      <verifyDownload>true</verifyDownload>
+                    <checksumAlgorithm>MD5</checksumAlgorithm>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
-                    	<warName>cas-management</warName>
-			<failOnMissingWebXml>false</failOnMissingWebXml>
-			<recompressZippedFiles>false</recompressZippedFiles>
-			<archive>
-				<compress>false</compress>
-				<manifestFile>${project.build.directory}/war/work/org.apereo.cas/cas-management-webapp/META-INF/MANIFEST.MF</manifestFile> 
-			</archive>
+                    <warName>cas-management</warName>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <recompressZippedFiles>false</recompressZippedFiles>
+                    <archive>
+                        <compress>false</compress>
+                        <manifestFile>${project.build.directory}/war/work/org.apereo.cas/cas-management-webapp/META-INF/MANIFEST.MF</manifestFile> 
+                    </archive>
                     <overlays>
                         <overlay>
                             <groupId>org.apereo.cas</groupId>
@@ -97,34 +97,34 @@
     </repositories>
 
     <profiles>
-		<profile>
-		    <activation>
-		        <activeByDefault>true</activeByDefault>
-		    </activation>
-		    <id>pgp</id>
-		    <build>
-		        <plugins>
-		            <plugin>
-		                <groupId>com.github.s4u.plugins</groupId>
-		                <artifactId>pgpverify-maven-plugin</artifactId>
-		                <version>1.1.0</version>
-		                <executions>
-		                    <execution>
-		                        <goals>
-		                            <goal>check</goal>
-		                        </goals>
-		                    </execution>
-		                </executions>
-		                <configuration>
-		                    <pgpKeyServer>hkp://pool.sks-keyservers.net</pgpKeyServer>
-		                    <pgpKeysCachePath>${settings.localRepository}/pgpkeys-cache</pgpKeysCachePath>
-		                    <scope>test</scope>
-		                    <verifyPomFiles>true</verifyPomFiles>
-		                    <failNoSignature>false</failNoSignature>
-		                </configuration>
-		            </plugin>
-		        </plugins>
-		    </build>
-		</profile>
+        <profile>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <id>pgp</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.github.s4u.plugins</groupId>
+                        <artifactId>pgpverify-maven-plugin</artifactId>
+                        <version>1.1.0</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <pgpKeyServer>hkp://pool.sks-keyservers.net</pgpKeyServer>
+                            <pgpKeysCachePath>${settings.localRepository}/pgpkeys-cache</pgpKeysCachePath>
+                            <scope>test</scope>
+                            <verifyPomFiles>true</verifyPomFiles>
+                            <failNoSignature>false</failNoSignature>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>
