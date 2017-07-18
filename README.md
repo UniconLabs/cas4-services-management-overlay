@@ -4,7 +4,7 @@ CAS4 Services Management Web Application Maven overlay
 Services mangement web application Maven overlay for CAS versions `4.1.0+` with externalized configuration.
 
 ## NOTICE
-**THIS PROJECT IS NOT CURRENTLY MAINTAINED NOR SUPPORTED**
+**THIS PROJECT IS NOT MAINTAINED NOR SUPPORTED**
 
 
 # Versions
