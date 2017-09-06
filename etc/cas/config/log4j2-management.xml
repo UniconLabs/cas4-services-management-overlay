@@ -31,7 +31,7 @@
         <AsyncLogger name="org.springframework.web" level="warn" />
         <AsyncLogger name="org.springframework.context.annotation" level="error" />
         <AsyncLogger name="org.pac4j" level="info" />
-        <AsyncLogger name="org.apereo" level="${sys:cas.log.leve}/"/>
+        <AsyncLogger name="org.apereo" level="${sys:cas.log.level}/"/>
         <AsyncLogger name="org.thymeleaf" level="warn" />
         <AsyncLogger name="org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager" level="info"/>
         <Root level="warn">
