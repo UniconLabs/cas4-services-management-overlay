@@ -1,40 +1,60 @@
-CAS4 Services Management Web Application Maven overlay
+CAS Services Management Overlay
 ============================
 
-Services mangement web application Maven overlay for CAS versions `4.1.0+` with externalized configuration.
+Services management web application Maven overlay for CAS with externalized configuration.
 
 ## NOTICE
 **THIS PROJECT IS NOT MAINTAINED NOR SUPPORTED**
 
 
 # Versions
+
 ```xml
-<cas.version>4.1.0-RC2</cas.version>
+<cas.version>5.2.x</cas.version>
 ```
 
-# Recommended Requirements
-* JDK 1.7+
-* Apache Maven 3+
-* Servlet container supporting Servlet 3+ spec (e.g. Apache Tomcat 7+)
+# Requirements
 
-# Externalized Configuration
-The `etc` directory contains the sample configuration files that would need to be copied to an external file system location (`/etc/cas` by default)
-and configured to satisfy local CAS installation needs. Current files are:
+* JDK 1.8+
 
-* `cas-management.properties`
-* `user-details.properties`
-* `services/ServicesManagementWebApplication-52497044623301.json`
+# Build
 
-Note that the `log4j2.xml` config file is shared with cas web context and that file should be present already in `/etc/cas` directory.
+To see what commands are available to the build script, run:
+
+```bash
+./build.sh help
+```
+
+To package the final web application, run:
+
+```bash
+./build.sh package
+```
+
+To update `SNAPSHOT` versions run:
+
+```bash
+./build.sh package -U
+```
+
+## Windows Build
+On Windows you can run build.cmd instead of build.sh. The usage may differ from build.sh, run "build.cmd help" for usage.
+
+## Note
+
+If you are running the management web application on the same machine as the CAS server web application itself, 
+you will need to evaluate the build script and make sure the configuration files don't override each other.
+
 
 # Deployment
 
-## Maven
-* Execute `mvn clean package`
-* Deploy resultant `target/cas-services.war` to a Servlet container of choice (next to a running cas server)
+## Embedded Tomcat
 
-# Use
-Access the server on `https://localhost:8443/cas-services` (replace `localhost` and port with whatever your local deployment configuration is)
-and start adding services definitions. Also note that the CAS server services registry MUST be JSON and pointing to the same external config
-location for services files as this application. That setting would be in `/etc/cas/cas.properties` and should look like this: `service.registry.config.location=file:/etc/cas/services`
-This same property is set in `/etc/cas/cas-management.properties` for this application.
+CAS will be available at:
+
+* `http://cas.server.name:8080/cas-management`
+* `https://cas.server.name:8443/cas-management`
+
+## External
+
+Deploy resultant `target/cas-management.war`  to a servlet container of choice.
